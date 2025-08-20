@@ -57,3 +57,7 @@ struct SplashScreenView: View {
         }
     }
 }
+
+#Preview {
+    SplashScreenView(isActive: .constant(true), dismissMode: .manual)
+}
