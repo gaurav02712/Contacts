@@ -18,6 +18,7 @@ struct ContactRow: View {
                 .frame(width: 48.0, height: 48.0)
                 .background(Color(.systemGray4))
                 .clipShape(.circle)
+//                .padding(.leading, 8)
             
             VStack (alignment: .leading, spacing: 4) {
                 Text(contact.firstName + " " + (contact.lName ?? "").trimmingCharacters(in: .whitespacesAndNewlines))
@@ -26,7 +27,7 @@ struct ContactRow: View {
                     .foregroundStyle(Color.gray)
             }
             Spacer()
-        }.padding(.horizontal)
+        }
     }
 }
 
